@@ -1,6 +1,6 @@
-#Wordle Helper Project
+# Wordle Helper Project
 
-##Commands:
+## Commands:
 - **sure C i**: when you know a letter's position for sure, enter "sure" followed by the letter C in capital case followed by i from 1 to 5 indicating its position. (correspond to GREEN in wordle)
 - **ctn C i j**: when you know a letter is contained, enter "ctn" followed by the letter in capital case C, the minimum number of occurance of this letter denoted by i (typically 1), and the position to be eliminated j. (correspond to YELLOW in wordle)
 - **elim [C]**: when you know a letter is not contained, enter "elim" followed by a list of letters in capital cases C. (correspond to GREY in wordle)
@@ -10,7 +10,7 @@
 - **search unique**: look up all the words based on the current limitations set, and all words have unique or non-repeating letters
 - **search adv**: look up all the words based on the current limitations set, and all words have unique or non-repeating letters, and these words are scored based on how often the letter appears based on the histogram, and the highest scored word is returned.
 
-##Procedure:
+## Procedure:
 - Start the game with any word
 - Look at the result.
   - For all green letters: use sure command, only need to use it once for each letter in each game
@@ -21,6 +21,7 @@
   - if result from sa is none or invalid, use search unique or su
   - depending on the situation, can use search all or s
 
+## Result:
 After more testing, my program certainly helps me a lot in beating this game. However, it also allows me to see some issues with the program and also better understand the game.
 - For the game, I'm still figuring in out if in certain situation the game is unwinnable through pure logic and all comes down to luck. For instance, there are about 10 words that end with "ight" like fight, might, sight, tight, dight, etc. A potential improvement to the program can be to incorporate a search method that look up words to quickly eliminate all the initial letters because there's not enough attempts to guess through all of them and it would come down to luck. Yet of course, if there's no such word, then in combination with a unlucky first word seems to make it impossible to guarantee a win in some situations.
 - Some potential improvements with my program:
